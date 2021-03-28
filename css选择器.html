@@ -1,0 +1,29 @@
+<html>
+    <!-- id类型的只能被用一次，class可以多次 -->
+    <!-- emmmm，我把id用到了两个p上好像也行…… -->
+    <head>
+        <style type="text/css">
+            p{font-size: 12px;}
+            .one{font-size: 18px;}
+            .three{color: red;}
+            #two{font-size: 20px;}
+            /* 嵌套声明 */
+            p span{color: red;}
+            /* 集体声明 */
+            h1,h2{text-align: center;}
+            /* 全局声明
+                *{。。。。。} 
+                所有标签都会用这个样式
+            */
+        </style>
+    </head>
+    <body>
+        <p class="one">class 1</p>
+        <p id="two">id 2</p>
+        <!-- 两个class混合使用，中间加空格 -->
+        <p class="one three">3</p>
+        <p>r<span>e</span>d</p>
+        <h1>h1</h1>
+        <h2>h2</h2>
+    </body>
+</html>
