@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css样式及优先级</title>
+    <!-- 内嵌样式 -->
+    <style>
+        p{
+            color: red;
+            font-size: 15px;
+        }
+    </style>
+    <!-- 外部样式 -->
+    <link rel="stylesheet" href="css/html_css.css">
+</head>
+<body>
+    <!-- 行内样式 -->
+    <p style="color: red;font-size: 12px;">这是一个段落。</p>
+    <p>试一下内嵌的，在head里写style</p>
+    <p>外部样式表可能显示不出来，但是代码里写了</p>
+    <p>居然是外部把内嵌覆盖了？？？</p>
+</body>
+</html>
