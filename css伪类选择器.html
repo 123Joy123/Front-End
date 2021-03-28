@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css伪类选择器</title>
+    <style>
+        /* 顺序love&hate */
+
+        /* 没访问过 */
+        a:link{
+            text-decoration: none;
+            /* 没有下划线 */
+            color:#09f;
+        }
+
+        /* 访问过的 */
+        a:visited{
+            text-decoration: none;
+            /* 没有下划线 */
+            color:#930;
+        }
+
+        /* 鼠标放上面的样式 */
+        a:hover{
+            text-decoration: underline;
+            color:#03c;
+            /* 鼠标放上去字会放大 */
+            font-size: 120%;
+        }
+
+        /* 激活的样式，不太清楚啥意思 */
+        a:active{
+            text-decoration: none;
+            /* 没有下划线 */
+            color:#03c;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">link 1</a>
+</body>
+</html>
