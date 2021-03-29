@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #nav{
+            width: 300px;
+            margin: 0 auto;
+            /* 去除链接之间的间隙 */
+            font-size: 0;
+        }
+        a{
+            /* a默认是inline类型，不能设置高和宽 */
+            /* inline类型是默认水平排列的 */
+            /* block类型是默认垂直排列的，能设置高和宽 */
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            font-size: 14px;
+            /* 文本对齐方式，就是水平方向的对齐方式 */
+            text-align: center;
+            /* 设置垂直方向和height一样，实现垂直方向居中 */
+            line-height: 30px;
+            /* 没有下划线 */
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+        }
+        /* 鼠标悬停样式 */
+        a:hover{
+            color: white;
+            background-color: #ccc;
+            border: 1px solid;
+            border-left-color: orange;
+            border-top-color: orange;
+            border-color: orange;
+            border-bottom-color:#ccc ;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <a href="#">链接1</a>
+        <a href="#">链接2</a>
+        <a href="#">链接3</a>
+    </div>
+</body>
+</html>
