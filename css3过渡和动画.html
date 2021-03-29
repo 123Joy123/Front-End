@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 30px;
+            width: 100px;
+            line-height: 30px;
+            border-radius: 5px;
+            color: #000;
+            background-color: silver;
+            /* all指所有取值变化的属性 */
+            /* 或者给那两个变化的属性用逗号隔开 */
+            /* 变化时间0.5s */
+            /* 变化方式匀速linear */
+            transition: all 0.5s linear;
+        }
+        div:hover{
+            color: white;
+            background-color: #45b823;
+        }
+
+        .ani{
+            width: 100px;
+            height: 100px;
+        }
+        /* @用来定义规则 */
+        /* 关键帧 */
+        @keyframes mycolor {
+            0% {background-color: red;}
+            30% {background-color: blue;}
+            60% {background-color: yellow;}
+            100% {background-color: green;}
+        }
+        .ani:hover{
+            animation: mycolor 5s linear;
+        }
+    </style>
+</head>
+<body>
+    <div>web design</div>
+    <div class="ani"></div>
+</body>
+</html>
