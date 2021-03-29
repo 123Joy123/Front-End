@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #0d3462;
+        }
+        #piclist{
+            width: 760px;
+            height: 220px;
+            margin: 100px auto;
+        }
+        .picbox{
+            float: left;
+            width: 170px;
+            height: 190px;
+            margin: 10px;
+            /* 相对定位 */
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 1.5s;
+        }
+        .picbox:hover{
+            transform: rotateY(180deg);
+        }
+        .face{
+            width: 170px;
+            height: 190px;
+            /* 绝对定位，这样face的文件流会丢失，back就覆盖到face上面了 */
+            position: absolute;
+        }
+        .front{
+            border: 2px solid #4b2518;
+        }
+        .back{
+            /* 初始反转180，再翻180文字就是正的了 */
+            transform: rotateY(180deg);
+            background-color: #4b2518;
+            border: 2px solid #fff;
+        }
+        .back h3{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 舞台 -->
+    <div id="piclist">
+        <!-- 父容器 -->
+        <div class="picbox">
+            <div class="face front"><img src="img/1.jpg" alt=""></div>
+            <div class="face back">
+                <h3>Ellen</h3>
+            </div>
+        </div>
+
+        <!-- 父容器 -->
+        <div class="picbox">
+            <div class="face front"><img src="img/2.jpg" alt=""></div>
+            <div class="face back">
+                <h3>Troye</h3>
+            </div>
+        </div>
+
+        <!-- 父容器 -->
+        <div class="picbox">
+            <div class="face front"><img src="img/3.jpg" alt=""></div>
+            <div class="face back">
+                <h3>Scarlett</h3>
+            </div>
+        </div>
+
+        <!-- 父容器 -->
+        <div class="picbox">
+            <div class="face front"><img src="img/4.jpg" alt=""></div>
+            <div class="face back">
+                <h3>Scarlett</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
