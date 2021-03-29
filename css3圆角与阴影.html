@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 两个圆角两个尖角的矩形 */
+        #radius1{
+            height: 100px;
+            width: 150px;
+            border: 1px solid blue;
+            /* 左上方的圆角，水平40，垂直20 */
+            border-top-left-radius: 40px 20px;
+            border-bottom-right-radius: 20px;
+        }
+        /* 长条胶囊状矩形 */
+        #radius2{
+            width: 350px;
+            height: 50px;
+            border: 2px solid #000;
+            background: #ddd;
+            /* 整体高度是50，圆角半径25，所以两边是两个圆形的 */
+            border-radius: 25px;
+        }
+        #shadow1{
+            width: 300px;
+            height: 100px;
+            background-color: #f90;
+            /* 阴影水平和垂直偏移量为10，模糊距离为5 */
+            box-shadow: 10px 10px 5px #888;
+        }
+    </style>
+</head>
+<body>
+    <div id="radius1"></div>
+    <div id="radius2"></div>
+    <div id="shadow1"></div>
+</body>
+</html>
