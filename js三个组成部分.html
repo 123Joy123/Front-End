@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- script标签可以写head里也可以写body里 -->
+    <script>
+        // ECMAJS部分
+        var a=[1,2,3,4];
+        var sum=0;
+        for(var i=0;i<a.length;i++)
+        {
+            sum+=a[i];
+        }
+        document.write(sum);
+
+        // BOM——浏览器对象模型
+        function load()
+        {
+            window.open('http://www.baidu.com','_blank','width=600,height=400,top=100px,left=0px')
+        }
+    </script>
+        <!-- DOM——文档对象模型操作过程 -->
+    <p id="changeStyle">通过DOM改变</p>
+    <button onclick="document.getElementById('changeStyle').style.fontSize='24px'">
+    点击改变字号
+    </button>
+
+    <br />
+    <button onclick="load()">百度</button>
+</body>
+</html>
